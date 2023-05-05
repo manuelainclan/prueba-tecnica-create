@@ -1,0 +1,31 @@
+.section {
+  margin: auto;
+  font-family: $font-text;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  &-article {
+    margin: 0 10px 10px 10px;
+    border-bottom: 1px solid $--black;
+    &-h2 {
+      @include t($defaultFontSize, 30px);
+    }
+    &-p {
+      @include t($textFontSize, 12px);
+      padding-bottom: 10px;
+    }
+  }
+  &-article-2 {
+    margin: 0 10px 10px 10px;
+    border-bottom: 1px solid $--black;
+    &-h2 {
+      @include t($defaultFontSize, 30px);
+    }
+    &-p {
+    border-left: 4px solid $--grey;
+      @include t($textFontSize, 12px);
+    padding-left: 10px;
+    margin: 10px;
+    }
+  }
+}
