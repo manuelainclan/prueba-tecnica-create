@@ -3,7 +3,14 @@
   font-family: $font-text;
   display: flex;
   flex-direction: column;
-  padding: 143px 10px 10px 10px;
+  padding: 10px;
+  margin-top: 133px;
+  
+   @include tablet {
+    width: 60%;
+    margin: 133px 0 0 50px;
+    background-color: $--color-background-1;
+   }
 
   /* Artículo 1 y 3*/
   &-article {
