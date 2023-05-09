@@ -1,25 +1,59 @@
 .main {
-    display: flex;
-    @include tablet {
-        background-color: $--color-background-6;
-        min-height: 88vh;
-    }
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
+  @include desktop {
+    flex-direction: row;
+    background-color: $--color-background-6;
+    min-height: 93vh;
+  }
 }
-.aside{
-    display: none;
-    @include tablet {
-                display: flex;
-                flex-direction: column;
-                margin: 133px 50px 0 0 ;
-            width: 30%;
-            
-            background-color: $--color-background-7;
-            
-           
-            justify-content: center;
-            
-        }
-    @include desktop {
-        width: 40%;
-        }
+.aside {
+  display: none;
+
+  @include tablet {
+    display: block;
+    background-color: #008000;
+    margin-bottom: 120px;
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+
+      &-content {
+        margin: 5%;
+        padding-bottom: 20%;
+        min-width: 30%;
+
+        background-color: $--color-background-2;
+      }
+    }
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    margin: 73px 50px 0 0;
+    width: 40%;
+
+    background-color: $--color-background-7;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 10%;
+      width: auto;
+
+      &-content {
+        padding-bottom: 40%;
+        min-width: 70%;
+        margin-bottom: 5%;
+
+        background-color: $--color-background-2;
+      }
+    }
+  }
 }

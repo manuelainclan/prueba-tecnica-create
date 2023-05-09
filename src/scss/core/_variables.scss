@@ -1,39 +1,39 @@
-// Esta es la variable que usaremos como tamaño por defecto
-$defaultFontSize: 16;
+// Fonts size
+$defaultFontSize: 16px;
+$tabletFontSize: 1.2rem;
+$desktopFontSize: 1.5rem;
+$h1FontSize: 1.2rem;
+$textFontSize: 0.8rem;
+$textTabletFontSize: 1rem;
+$textDesktopFontSize: 1.2rem;
 
-//fonts
+// Fonts
 $font-title: 'Public Sans', serif;
 $font-text: 'Public Sans', sans-serif;
 $font-textb: 'Public Sans', sans-serif;
-$defaultFontSize: 1rem;
-$h1FontSize: 1.2rem;
-$textFontSize: 0.8rem;
 
-// colors
+// Colors
+$--white: #fff;
+$--black: #000;
+$--grey: #d0d0d0;
+$--orange: #ff993e;
+$--green: #008000;
+$--red: #c0392b;
+$--red-two: #e74c3c;
+$--brown: #874000;
+$--black-20: rgba(0, 0, 0, 0.2);
+$--white-two: #f0f0f0;
 
- $--white: #fff;
- $--black: #000;
- $--grey: #d0d0d0;
- $--orange: #ff993e;
- $--green: #008000;
- $--red: #c0392b;
- $--red-two: #e74c3c;
- $--brown: #874000;
- $--black-20: rgba(0, 0, 0, 0.2);
- $--white-two: #f0f0f0;
+$--color-text-a: $--black;
+$--color-text-b: $--white;
+$--color-background-1: $--white;
+$--color-background-2: $--orange;
+$--color-background-3: $--red;
+$--color-background-4: $--red-two;
+$--color-background-5: $--brown;
+$--color-background-6: $--white-two;
+$--color-background-7: $--green;
 
- $--color-text-a: $--black;
- $--color-text-b: $--white;
- $--color-background-1: $--white;
- $--color-background-2: $--orange;
- $--color-background-3: $--red;
- $--color-background-4: $--red-two;
- $--color-background-5: $--brown;
- $--color-background-6: $--white-two;
- $--color-background-7: $--green;
-
-// breakpoints
-
+// Breakpoints
 $breakpoint-tablet: 500px;
 $breakpoint-desktop: 1024px;
-

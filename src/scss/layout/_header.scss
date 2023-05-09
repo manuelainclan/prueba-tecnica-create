@@ -6,11 +6,22 @@
     width: 100%;
     height: 133px;
 
+    @include desktop {
+        height: 73px;
+    }
+
     &-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: $--color-background-2;
+
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 80px 0 80px;
+        }
 
         &-title {
             display: flex;
@@ -29,6 +40,12 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+
+            @include desktop {
+                width: 30vw;
+                height: 40px;
+            }
+
 
             &-links {
                 height: 100%;

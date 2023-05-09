@@ -5,12 +5,17 @@
   flex-direction: column;
   padding: 10px;
   margin-top: 133px;
-  
-   @include tablet {
+
+  @include tablet {
+    min-height: 72vh;
+  }
+
+  @include desktop {
     width: 60%;
-    margin: 133px 0 0 50px;
+    margin: 73px 0 0 50px;
     background-color: $--color-background-1;
-   }
+    padding-top: 3%;
+  }
 
   /* Artículo 1 y 3*/
   &-article {
@@ -20,11 +25,26 @@
     &-h2 {
       @include t($defaultFontSize, 30px);
       font-weight: 900;
+      margin-bottom: 10px;
+      @include tablet {
+        @include t($tabletFontSize, 30px);
+        font-weight: 900;
+      }
+      @include desktop {
+        @include t($desktopFontSize, 30px);
+        font-weight: 900;
+      }
     }
 
     &-p {
       @include t($textFontSize, 12px);
       padding-bottom: 10px;
+      @include tablet {
+        @include t($textTabletFontSize, 18px);
+      }
+      @include desktop {
+        @include t($textDesktopFontSize, 18px);
+      }
     }
   }
 
@@ -36,6 +56,14 @@
     &-h2 {
       @include t($defaultFontSize, 30px);
       font-weight: 900;
+      @include tablet {
+        @include t($tabletFontSize, 30px);
+        font-weight: 900;
+      }
+      @include desktop {
+        @include t($desktopFontSize, 30px);
+        font-weight: 900;
+      }
     }
 
     &-p {
@@ -43,6 +71,12 @@
       @include t($textFontSize, 12px);
       padding-left: 10px;
       margin: 10px;
+      @include tablet {
+        @include t($textTabletFontSize, 18px);
+      }
+      @include desktop {
+        @include t($textDesktopFontSize, 18px);
+      }
     }
   }
 }

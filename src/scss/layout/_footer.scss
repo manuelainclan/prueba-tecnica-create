@@ -1,73 +1,93 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    font-family: $font-title;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  font-family: $font-title;
+  background-color: $--color-background-2;
 
-    &-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $--color-background-2;
-        padding: 15px 0;
-            
+  @include desktop {
+    height: 73px;
+  }
 
-        &-nav-ul {
-            display: flex;
-            width: 80vw;
-            height: 40px;
-            align-items: center;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            &-links {
-                height: 100%;
-                width: 25%;
-                background-color: $--color-background-3;
-
-                &-a {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: $--color-text-b;
-                    transition: all 0.3s ease;
-
-                    &:hover {
-                        background-color: $--color-background-4;
-                    }
-                }
-            }
-        }
-
-        &-socialmediaNav-ul {
-            display: flex;
-            width: 80vw;
-            height: 50px;
-            align-items: center;
-            justify-content: center;
-            padding: 0 0 15px 0;
-
-            &-links {
-                height: 100%;
-                width: 20%;
-                background-color: $--color-background-5;
-
-                &-a {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: $--color-text-b;
-                    transition: all 0.3s ease;
-
-                    &:hover {
-                        background-color: $--color-background-7;
-                    }
-                }
-            }
-        }
+    padding: 15px 0;
+    @include desktop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px 0 80px;
     }
+
+    &-nav-ul {
+      display: flex;
+      width: 80vw;
+      height: 40px;
+      align-items: center;
+      @include desktop {
+        width: 20vw;
+        height: 40px;
+      }
+
+      &-links {
+        height: 100%;
+        width: 25%;
+        background-color: $--color-background-3;
+
+        &-a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: $--color-text-b;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: $--color-background-4;
+          }
+        }
+      }
+    }
+
+    &-socialmediaNav-ul {
+      display: flex;
+      width: 80vw;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0 15px 0;
+
+      @include desktop {
+        width: 16vw;
+        height: 40px;
+        padding: 15px 0 15px 0;
+      }
+
+      &-links {
+        height: 100%;
+        width: 20%;
+        background-color: $--color-background-5;
+
+        &-a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: $--color-text-b;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: $--color-background-7;
+          }
+        }
+      }
+    }
+  }
 }
